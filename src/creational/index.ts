@@ -1,10 +1,10 @@
-import abstractFactory from "src/creational/abstractFactory/index";
-import builderPattern from "src/creational/builder/index";
-import factoryMethod from "src/creational/factoryMethod/index";
-import prototypePattern from "src/creational/prototype/index";
-import singletonPattern from "src/creational/singleton/index";
+import abstractFactory from "../creational/abstractFactory/index";
+import builderPattern from "../creational/builder/index";
+import factoryMethod from "../creational/factoryMethod/index";
+import prototypePattern from "../creational/prototype/index";
+import singletonPattern from "../creational/singleton/index";
 
-const patterns = [
+const creationalPatterns = [
   { name: "Factory Method Pattern", func: factoryMethod },
   { name: "Abstract Factory Pattern", func: abstractFactory },
   { name: "Builder Pattern", func: builderPattern },
@@ -14,7 +14,7 @@ const patterns = [
 
 export default async function runAllCreationalPatterns() {
   await Promise.all(
-    patterns.map(({ name, func }) => {
+    creationalPatterns.map(({ name, func }) => {
       console.log(`\nRunning ${name}:`);
       return func();
     })
