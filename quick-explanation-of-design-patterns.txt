@@ -1,0 +1,51 @@
+Creational Patterns
+
+Factory Method - usually used for objects that have a value that is ready to use, like a user management system where different types of users (admin, guest, member) can be created using a common interface without specifying the exact class.
+
+Abstract Factory - used for creating sets of related objects that need to work together, like a cross-platform application that generates user interfaces for both web and mobile, ensuring buttons, forms, and layouts are compatible across platforms.
+
+Builder - enables customizable step-by-step creation of complex objects, like a configuration tool that allows developers to build and customize application settings (like database connections, API keys) through a structured process.
+
+Prototype - used to create new product versions by copying existing ones, like a game development environment where character prototypes can be cloned and modified to create new characters with similar attributes.
+
+Singleton - ensures a single instance of a class, like a notification system in an app where all messages go through one central system, so every part of the app can send notifications without creating multiple systems.
+
+Structural Patterns
+
+Adapter - allows incompatible interfaces to work together, like integrating a third-party payment service into an existing application that expects a different interface.
+
+Bridge - separates abstraction from implementation, enabling independent variations, like a graphics application that allows users to choose between 2D and 3D rendering methods without altering the core shape definitions.
+
+Composite - organizes components into a tree structure, enabling you to manage both single elements and collections of elements uniformly, like a web page where you can control the entire layout, including the header, body, and footer, as a single unit or individually.
+
+Decorator - adds behavior to individual objects dynamically without affecting others, like a pizza ordering system that allows customers to add toppings to their pizzas without creating a new class for each combination.
+
+Facade - provides a simplified interface to a complex subsystem, like a home theater system remote that allows users to control various devices (TV, speakers, DVD player) with a single interface.
+
+Flyweight - reduces memory usage by sharing common parts of state between multiple objects, like a text rendering application where multiple characters share the same font style to minimize memory consumption.
+
+Proxy - acts as a surrogate to control access to another object, like a network proxy that manages communication between a client and a remote server, allowing for features like lazy loading and access control.
+
+Behavioral Patterns
+
+Chain of Responsibility - allows multiple handlers to process a request without specifying the handler explicitly, like a customer support system where requests pass through various departments until one handles the issue.
+
+Command - encapsulates a request as an object, allowing for parameterization and queuing of requests, like a remote control where each button represents a different command for home automation.
+
+Interpreter - provides a way to define and evaluate user-triggered commands in an application, similar to how a chatbot interprets user inputs like "search for recipes" or "book a flight." This pattern allows the application to process various commands based on user actions effectively.
+
+Iterator - provides a way to access elements of a collection sequentially without exposing the underlying structure, like a navigation menu where users can traverse through options without knowing how they are stored.
+
+Mediator - defines an object that encapsulates how a set of objects interact, promoting loose coupling, like a transaction processing system where a central mediator handles communication between different payment methods, inventory management, and order confirmation, ensuring all parts work together seamlessly without direct dependencies.
+
+Memento - captures and externalizes an object's internal state without violating encapsulation, allowing it to be restored later, like an undo feature in a text editor that saves past versions of the document.
+
+Observer - defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified, like a stock market application that updates all subscribers when a stock price changes.
+
+State - allows an object to alter its behavior when its internal state changes, like a traffic light that changes its behavior based on whether it's in a red, yellow, or green state.
+
+Strategy - defines a family of interchangeable algorithms, like a sorting application where users can select different sorting algorithms based on preference, or a payment processing system where they can choose between credit card, debit card, or e-wallet options at checkout.
+
+Template Method - defines the skeleton of an algorithm in a method, deferring some steps to subclasses, like a user authentication process where different user types (admin, guest, member) can implement their own specific validation steps while sharing the overall login procedure.
+
+Visitor - separates an algorithm from the object structure it operates on, allowing new operations to be defined without modifying the objects, like an operation that calculates the total price of items in a shopping cart with discounts applied.

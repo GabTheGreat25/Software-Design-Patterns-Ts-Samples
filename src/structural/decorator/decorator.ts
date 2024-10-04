@@ -5,7 +5,7 @@ export class Decorator extends BaseComponent {
 
   constructor(component: BaseComponent) {
     super();
-    this.component = component;
+    this.component = component ;
   }
 
   // Adds additional functionality to the operation.

@@ -15,7 +15,7 @@
   ],
   "author": "GabtheGreat25",
   "license": "ISC",
-  "description": "",
+  "description": "A TypeScript project implementing various design patterns including creational, structural, and behavioral patterns for educational and practical purposes.",
   "devDependencies": {
     "@types/node": "^22.7.4",
     "typescript": "^5.6.2"
