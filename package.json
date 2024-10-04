@@ -4,10 +4,16 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "npm run build && node dist/index.js"
+    "all": "npm run build && node dist/index.js",
+    "creational": "npm run build && node dist/index.js creational",
+    "structural": "npm run build && node dist/index.js structural",
+    "behavioral": "npm run build && node dist/index.js behavioral"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "design patterns",
+    "typescript"
+  ],
+  "author": "GabtheGreat25",
   "license": "ISC",
   "description": "",
   "devDependencies": {
